@@ -11,21 +11,18 @@ body {
     height: 100vh;
 }
 header {
-    border: 1px dashed red;
     height: 100px;
     display: flex;
     justify-content: flex-end;
 }
 main {
     flex-grow: 1;
-    border: 1px dashed red;
     overflow: auto;
 }
 footer {
     display: flex;
     justify-content: space-between;
     background-color: rgb(32, 32, 32);
-    border: 1px dashed red;
 }
 .header-button {
     color: white;
@@ -35,14 +32,17 @@ footer {
     margin: 5px;
     border-radius: 5px;
 }
-.footer-button {
-    font-size: 20px;
-    width: 8vw;
+.footer-button, .footer-button-share {
+    font-size: 35px;
+    width: 6vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     padding: 10px;
+}
+.footer-button-share {
+    color: greenyellow;
 }
 .footer-button-left {
     display: flex;
@@ -54,23 +54,22 @@ footer {
     display: flex;
     align-items: center;
     color: red;
-    padding: 10px;
+    padding: 10px 20px;
 }
 .button-text {
-    padding: 10px;
-    font-size: 12px;
+    padding-top: 10px;
+    font-size: 13px;
 }
 .box {
     min-width: 300px;
     min-height: 200px;
-    border: 1px dashed red;
     position: relative;
     margin: 10px;
     background-image: url(https://picsum.photos/300/200);
 }
 .box-text {
     color: white;
-    background-color: rgb(95, 107, 115);
+    background-color: rgb(97, 109, 117);
     display: inline-block;
     padding: 5px;
     position: absolute;
